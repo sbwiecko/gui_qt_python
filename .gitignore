@@ -1,0 +1,26 @@
+# multimedia samples
+*.jpg
+*.mp4
+
+# icons
+icons/
+
+# resources
+resources/
+
+# settings
+settings/
+.vscode/
+
+# pycache
+*pycache*
+
+# env
+.env/
+
+# build
+.build/
+
+# freeze and installer
+freeze.sh
+target/

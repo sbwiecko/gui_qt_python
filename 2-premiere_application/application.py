@@ -1,6 +1,9 @@
 import sys
 from PySide6.QtWidgets import QApplication, QWidget #, QPushButton
 # windows inherit from the QWidget class
+# can also from PySide6 import QtWidgets
+# and all the widgets needed are neceassrily prefixed with QtWidgets
+# e.g., app = QtWidgets.QApplication()
 
 # app = QApplication()
 # app = QApplication([]) # empty list was minimally required in previous versions of PySide

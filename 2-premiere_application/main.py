@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QApplication, QWidget, QListWidget, QPushButton, QVBoxLayout, QHBoxLayout
 
 # organize the widgets into a class with methods
-class MainWindow(QWidget): # inherit all from QWidget
+class MainWindow(QWidget): # inherit all from QWidget; simplest form of window compared to e.g., QMainWindow
     def __init__(self):
         super().__init__()
 

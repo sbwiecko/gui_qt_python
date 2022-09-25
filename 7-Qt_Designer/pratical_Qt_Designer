@@ -1,0 +1,11 @@
+It is possible to reproduce the concept of the calculator presented during section 5, using QT Designer.
+
+When the program is opened, a box requires what type of window we want to make. We can select "widget" as presented in previous sessions. We then place the Line Edit as well as all the buttons from the "Widget box" on the left.
+
+Each element can be chilled, either by directly modifying the text in the widget, or right clicking, or finally by passing by the "proproductive publisher" on the right. The layout can be changed from the toolbar at the top.
+
+Everything can be modified for individual or group selected elements: the Sizepolicy, the Minimumsize, the Enabled, etc. And even the style sheet.
+
+The properties of the layout can be modified from this same menu, after selecting the obs/widget parent in the "object inspector".
+
+Save the file as, e.g., calculator.ui

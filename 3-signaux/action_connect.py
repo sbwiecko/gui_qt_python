@@ -1,10 +1,14 @@
+import sys
 from PySide6.QtWidgets import QApplication, QWidget, QListWidget, QPushButton, QHBoxLayout
 
 # organize the widgets into a class with methods
 class MainWindow(QWidget): # inherit all from QWidget
     def __init__(self):
         super().__init__()
+    #     self.initializeUI() # recommended
 
+    # def initializeUI(self): # recommended
+    #     """Set up application's GUI."""
         self.setWindowTitle("Signaux Qt")
 
         main_layout = QHBoxLayout(self) # pass the parent widget to layout
@@ -15,6 +19,7 @@ class MainWindow(QWidget): # inherit all from QWidget
 
         main_layout.addWidget(self.button) # add button to layout
 
+        ### SLOTS ###
         self.button.clicked.connect(self.button_clicked) # connect action to method
         # see also the documenation, the clicked signal send a check=False by default
 
@@ -26,13 +31,16 @@ class MainWindow(QWidget): # inherit all from QWidget
     
     # def button_released(self):
     #     print("Le bouton a bien été relâché.")
+
+        self.show() # widget not displayed by default
         
     def button_clicked(self, checked):
         print("Le bouton a bien été cliqué.")
         self.button.setText("CHECKED") if checked else self.button.setText("Click !")
 
-
-app = QApplication()
-main_window = MainWindow()
-main_window.show()
-app.exec()
+if __name__ == "__main__":
+    app = QApplication()
+    main_window = MainWindow()
+    # main_window.show() # considere showing the widget/window in the class
+    sys.exit(app.exec()) # handle the app exit by the system optimally
+    # app.exec()

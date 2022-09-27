@@ -1,0 +1,14 @@
+Dans les prochaines parties, nous allons voir comment nous pouvons convertir un script en ligne de commande et un script avec une interface graphique en exécutable avec la bibliothèque `auto-py-to-exe`.
+
+Cette bibliothèque est très pratique pour convertir un script en exécutable de façon très simple.
+
+En arrière-plan, c'est la bibliothèque `pyinstaller` qui est utilisée.
+
+Si vous souhaitez utiliser directement `pyinstaller` (ce sera le cas si vous utilisez Linux), vous pouvez aller voir directement la session « Directement avec PyInstaller ».
+
+C'est également cette bibliothèque qui est utilisée par `fbs` que nous utilisons plus tard dans la formation.
+
+Bref, tout ça pour dire que si vous souhaitez avoir le maximum de contrôle, il est toujours préférable de passer directement par `pyinstaller`, que vous pourrez personnaliser au maximum, mais qui demandera plus de travail.
+
+Si vous souhaitez au contraire rapidement convertir une application en exécutable ou utiliser des outils qui vous facilitent la tâche, je vous conseille d'explorer `auto-py-to-exe` et `fbs`.
+

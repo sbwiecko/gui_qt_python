@@ -18,8 +18,10 @@ settings/
 # env
 .env/
 
-# build
-.build/
+# build, dist and other output directories
+build/
+dist/
+output/
 
 # freeze and installer
 freeze.sh

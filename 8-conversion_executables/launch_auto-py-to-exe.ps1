@@ -1,3 +1,7 @@
+# ! auto-py-to-exe 2.23.1 requires pyinstaller>=4.6
+# another version of pyinstaller may be installed, e.g., with fbs
+# use another environment or run pip install -U pyinstaller before use
+
 # simply call the executable after installation via pip and choose the main entry script to convert
 #../.env/Scripts/auto-py-to-exe.exe
 

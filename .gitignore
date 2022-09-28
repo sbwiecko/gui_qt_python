@@ -18,11 +18,15 @@ settings/
 # env
 .env/
 
-# build, dist and other output directories
+# build, src, dist and other output directories
 build/
+src/
 dist/
 output/
 
 # freeze and installer
 freeze.sh
 target/
+
+# keep fbs pro installation file offline
+fbs_pro-1.1.4.tar.gz

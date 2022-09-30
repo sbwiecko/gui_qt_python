@@ -18,9 +18,8 @@ settings/
 # env
 .env/
 
-# build, src, dist and other output directories
+# build, dist and other output directories
 build/
-src/
 dist/
 output/
 

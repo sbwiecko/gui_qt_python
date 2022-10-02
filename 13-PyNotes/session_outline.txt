@@ -1,0 +1,22 @@
+70. Création de la structure du projet
+71. Création des constantes
+72. [API] - Introduction
+73. Création de la classe Note
+74. Ajout des méthodes __str__ et __repr__
+75. Évaluer le chemin de la note
+76. Modifier le contenu de la note
+77. Sauvegarder la note
+78. Supprimer la note
+79. Récupérer les notes sur le disque
+80. [GUI] - Introduction
+81. Présentation de l'interface
+82. Création des widgets et du layout
+83. Connexion des widgets
+84. Créer une note
+85. Charger les notes depuis le disque
+86. Supprimer une note
+87. Sauvegarder le contenu d'une note
+88. Charger le contenu d'une note
+89. Ajouter une feuille de style
+90. Modifier les icônes
+91. Distribuer l'application

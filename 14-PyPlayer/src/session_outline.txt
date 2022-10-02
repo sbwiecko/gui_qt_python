@@ -1,0 +1,8 @@
+92. Présentation de l'application
+93. Création des widgets
+94. Création des actions et des icônes
+95. Ouvrir et lire une vidéo
+96. Connexion des widgets
+97. Mettre à jour les boutons
+98. Distribution de l'application
+99. Installer les codecs LAV sur Windows

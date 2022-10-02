@@ -1,0 +1,22 @@
+131. Présentation de l'application
+132. [API] - Introduction
+133. Créer les constantes
+134. Récupérer les tâches
+135. Ajouter une tâche
+136. Supprimer une tâche
+137. Optimiser le code
+138. Changer le statut d'une tâche
+139. [GUI] - Introduction
+140. Créer les widgets et les layouts
+141. Ajouter une tâche
+142. Récupérer les tâches sur le disque dur
+143. Création du QListWidgetItem
+144. Changement de la couleur d'arrière-plan
+145. Changer le statut d'une tâche
+146. Modifier la couleur de la sélection
+147. Supprimer les tâches complétées
+148. Améliorer l'interface
+149. Créer l'icône dans la barre des tâches
+150. Gérer le clique sur l'icône
+151. Centrer l'application sous l'icône
+152. Centrer l'application sur Windows

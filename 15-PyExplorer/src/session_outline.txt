@@ -1,0 +1,11 @@
+100. Présentation de l'application
+101. Création des widgets
+102. Création du layout
+103. Création du modèle de fichiers
+104. Gestion du clique sur le QTreeView
+105. Gestion du clique sur le QListView
+106. Gestion du double-clique sur le QListView
+107. Mise en forme de l'application
+108. Ajouter les actions sur la barre d'outils
+109. Connecter la barre d'outils
+110. Modifier la taille des icônes

@@ -1,0 +1,20 @@
+111. Présentation de l'application
+112. Installation de la bibliothèque Pillow
+113. [API] - Introduction
+114. Création de la classe Image
+115. Création de la méthode reduce
+116. [GUI] - Introduction
+117. Créer les widgets
+118. Ajouter les widgets dans un layout
+119. Modifier les widgets
+120. Gestion du glisser-déposer
+121. Gestion du Drop Event
+122. Gestion des icônes
+123. Ajout des QListWidgetItems
+124. Connexion des widgets
+125. Récupération des images
+126. Création du thread
+127. Les signaux
+128. Ajouter une barre de progression
+129. Interrompre la conversion
+130. Autoriser la sélection multiple

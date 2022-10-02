@@ -1,5 +1,5 @@
-from fbs_runtime.application_context.PySide2 import ApplicationContext, cached_property
-from PySide2 import QtGui
+from fbs_runtime.application_context.PySide6 import ApplicationContext, cached_property
+from PySide6 import QtGui
 
 import sys
 
@@ -11,8 +11,9 @@ class AppContext(ApplicationContext):
         main_window = MainWindow(ctx=self)
         main_window.resize(1920 / 4, 1200 / 2)
         main_window.show()
-        return self.app.exec_()
+        return self.app.exec()
 
+    # speed process by keeping the images of the icons in the cache
     @cached_property
     def img_checked(self):
         return QtGui.QIcon(self.get_resource("images/checked.png"))

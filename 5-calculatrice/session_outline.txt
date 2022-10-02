@@ -1,0 +1,11 @@
+22. Introduction
+23. Créer la fenêtre de l'application
+24. Créer les widgets
+25. Connecter les boutons
+26. Calculer le résultat de l'opération
+27. Connecter les raccourcis claviers
+28. Supprimer le dernier caractère
+29. Ajouter une propriété pour le QLineEdit
+30. Empêcher les mauvaises saisies
+31. Styliser les widgets
+32. Styliser l'application

@@ -1,10 +1,10 @@
-from PySide2 import QtWidgets, QtCore, QtGui
+from PySide6 import QtWidgets, QtCore, QtGui
 
 import package.api.task
 
 COLORS = {False: (235, 64, 52), True: (160, 237, 83)}
 
-
+# customized QListWidgetItem with specific methods and colors
 class TaskItem(QtWidgets.QListWidgetItem):
     def __init__(self, name, done, list_widget):
         super().__init__(name)
@@ -26,8 +26,7 @@ class TaskItem(QtWidgets.QListWidgetItem):
         color = COLORS.get(self.done)
         self.setBackgroundColor(QtGui.QColor(*color))
         color_str = ", ".join(map(str, color))
-        stylesheet = f"""QListView::item:selected {{background: rgb({color_str});
-                                                    color: rgb(0, 0, 0);}}"""
+        stylesheet = f"QListView::item:selected {{background: rgb({color_str});color: rgb(0, 0, 0);}}"
         self.list_widget.setStyleSheet(stylesheet)
 
 
@@ -98,9 +97,11 @@ class MainWindow(QtWidgets.QWidget):
         self.tray.activated.connect(self.tray_icon_click)
 
     def add_task(self):
-        task_name, ok = QtWidgets.QInputDialog.getText(self,
-                                                       "Ajouter une tâche",
-                                                       "Nom de la tâche :")
+        task_name, ok = QtWidgets.QInputDialog.getText(
+            self,
+            "Ajouter une tâche",
+            "Nom de la tâche :"
+        )
         if ok and task_name:
             package.api.task.add_task(name=task_name)
             self.get_tasks()
@@ -118,7 +119,11 @@ class MainWindow(QtWidgets.QWidget):
         self.lw_tasks.clear()
         tasks = package.api.task.get_tasks()
         for task_name, done in tasks.items():
-            TaskItem(name=task_name, done=done, list_widget=self.lw_tasks)
+            TaskItem(
+                name=task_name,
+                done=done,
+                list_widget=self.lw_tasks
+            )
 
     def tray_icon_click(self):
         if self.isHidden():

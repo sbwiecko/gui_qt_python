@@ -3,8 +3,10 @@ from pathlib import Path
 import logging
 import json
 
+### logging
 logging.basicConfig(level=logging.DEBUG)
 
+### constants
 TASKS_DIR = os.path.join(Path.home(), ".todo")
 TASKS_FILEPATH = os.path.join(TASKS_DIR, "tasks.json")
 
@@ -18,12 +20,13 @@ def get_tasks():
 
 
 def add_task(name):
+    # first refresh list of tasjs
     tasks = get_tasks()
     if name in tasks.keys():
         logging.error("Une tâche avec le même nom existe déjà.")
         return False
 
-    tasks[name] = False
+    tasks[name] = False # default status
     _write_tasks_to_disk(tasks=tasks)
     return True
 
@@ -45,11 +48,11 @@ def set_task_status(name, done=True):
         logging.error("La tâche n'existe pas.")
         return False
 
-    tasks[name] = done
+    tasks[name] = done # done=True by default
     _write_tasks_to_disk(tasks=tasks)
     return True
 
-
+# private method
 def _write_tasks_to_disk(tasks):
     if not os.path.exists(TASKS_DIR):
         os.makedirs(TASKS_DIR)
@@ -60,7 +63,7 @@ def _write_tasks_to_disk(tasks):
 
 
 if __name__ == '__main__':
-    # add_task("Apprendre Python")
+    add_task("Apprendre Python")
     # set_tasks_statut(name="Apprendre Python")
-    remove_task(name="Apprendre Python")
+    # remove_task(name="Apprendre Python")
 

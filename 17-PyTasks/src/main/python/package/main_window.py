@@ -24,7 +24,8 @@ class TaskItem(QtWidgets.QListWidgetItem):
 
     def set_background_color(self):
         color = COLORS.get(self.done)
-        self.setBackgroundColor(QtGui.QColor(*color))
+        #self.setBackgroundColor(QtGui.QColor(*color))
+        self.setBackground(QtGui.QColor(*color))
         color_str = ", ".join(map(str, color))
         stylesheet = f"QListView::item:selected {{background: rgb({color_str});color: rgb(0, 0, 0);}}"
         self.list_widget.setStyleSheet(stylesheet)
